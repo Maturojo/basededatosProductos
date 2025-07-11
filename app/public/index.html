@@ -1,0 +1,30 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Productos</title>
+    <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+    <main class="container">
+        <h1>Gestor de Productos</h1>
+
+        <!-- Formulario de producto -->
+        <form id="formProducto" class="formulario">
+        <input type="text" id="titulo" placeholder="Título del producto" required />
+        <input type="text" id="codigo" placeholder="Código" required />
+        <input type="text" id="medidas" placeholder="Medidas (ej: 100x50 cm)" />
+        <input type="number" id="precio" placeholder="Precio en $" step="0.01" required />
+        <input type="url" id="foto" placeholder="URL de la imagen" />
+        <button type="submit">Agregar Producto</button>
+        </form>
+
+        <section id="productos" class="lista-productos">
+        <!-- Acá se van a insertar los productos -->
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+    </body>
+    </html>
