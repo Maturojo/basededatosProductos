@@ -1,3 +1,5 @@
+    @use '../abstracts/variables' as vars;
+    
     .formulario {
     display: flex;
     flex-direction: column;
@@ -10,14 +12,25 @@
     }
 
     button {
-        background-color: variables.$color-primario;
+        background-color: vars.$color-primario;
         color: white;
         border: none;
         cursor: pointer;
         transition: background 0.2s ease;
 
         &:hover {
-        background-color: darken(variables.$color-primario, 10%);
+        background-color: darken(vars.$color-primario, 10%);
         }
     }
+    
     }
+
+    .grupo-medidas {
+        display: flex;
+        gap: 0.5rem;
+
+        input {
+            flex: 1;
+        }
+        }
+

@@ -1,11 +1,13 @@
+@use '../abstracts/variables' as vars;
+
     * {
-    margin: 0;
+    margin: 2px;
     padding: 0;
     box-sizing: border-box;
     }
 
     body {
-    font-family: variables.$fuente-principal;
-    background-color: variables.$color-secundario;
-    color: variables.$color-texto;
+    font-family: vars.$fuente-principal;
+    background-color: vars.$color-secundario;
+    color: vars.$color-texto;
     }
