@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Agregar producto</title>
+    <link rel="stylesheet" href="/app/public/css/main.css" />
+    </head>
+    <body>
+    <h1>Agregar producto</h1>
+
+    <form id="formProducto" enctype="multipart/form-data">
+        <label for="titulo">Título:</label>
+        <input type="text" name="titulo" required>
+
+        <label for="codigo">Código:</label>
+        <input type="text" name="codigo" required>
+
+        <label for="categoria">Categoría:</label>
+        <input type="text" name="categoria" required>
+
+        <label for="ancho">Ancho (cm):</label>
+        <input type="number" name="ancho" required>
+
+        <label for="largo">Largo (cm):</label>
+        <input type="number" name="largo" required>
+
+        <label for="profundidad">Profundidad (cm):</label>
+        <input type="number" name="profundidad" required>
+
+        <label for="precio">Precio:</label>
+        <input type="number" name="precio" required>
+
+        <label for="foto">Imagen del producto:</label>
+        <input type="file" name="foto" accept="image/*" required>
+
+        <button type="submit">Guardar producto</button>
+    </form>
+
+    <script src="../js/agregar.js"></script>
+    </body>
+    </html>

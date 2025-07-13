@@ -2,33 +2,16 @@
     <html lang="es">
     <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gestor de Productos</title>
+    <title>Gestión de Productos</title>
     <link rel="stylesheet" href="/app/public/css/main.css" />
     </head>
-    <body>
+    <body class="inicio">
     <main class="container">
-        <h1>Gestor de Productos</h1>
-
-        <!-- Formulario de producto -->
-        <form id="formProducto" class="formulario">
-        <input type="text" id="titulo" placeholder="Título del producto" required />
-        <input type="text" id="codigo" placeholder="Código" required />
-        <div class="grupo-medidas">
-            <input type="number" id="ancho" placeholder="Ancho (cm)" required />
-            <input type="number" id="largo" placeholder="Largo (cm)" required />
-            <input type="number" id="profundidad" placeholder="Profundidad (cm)" required />
+        <h1>¿Qué querés hacer?</h1>
+        <div class="opciones">
+        <a href="/app/public/pages/agregar.html" class="btn">➕ Agregar Producto</a>
+        <a href="/app/public/pages/ver.html" class="btn">📦 Ver Productos</a>
         </div>
-        <input type="number" id="precio" placeholder="Precio en $" step="0.01" required />
-        <input type="url" id="foto" placeholder="URL de la imagen" />
-        <button type="submit">Agregar Producto</button>
-        </form>
-
-        <section id="productos" class="lista-productos">
-        <!-- Acá se van a insertar los productos -->
-        </section>
     </main>
-
-    <script src="/app/public/js/app.js"></script>
     </body>
     </html>

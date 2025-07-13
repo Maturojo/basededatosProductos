@@ -39,6 +39,24 @@ body {
   flex: 1;
 }
 
+.lista-categorias {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.lista-categorias .card-categoria {
+  padding: 1rem 2rem;
+  background: gray;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+.lista-categorias .card-categoria:hover {
+  background: #ccc;
+}
+
 .lista-productos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));

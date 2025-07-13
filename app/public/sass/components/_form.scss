@@ -1,4 +1,6 @@
     @use '../abstracts/variables' as vars;
+    @use 'sass:color';
+
     
     .formulario {
     display: flex;
@@ -19,7 +21,8 @@
         transition: background 0.2s ease;
 
         &:hover {
-        background-color: darken(vars.$color-primario, 10%);
+        background-color: color.adjust(vars.$color-primario, $lightness: -10%);
+
         }
     }
     
@@ -33,4 +36,25 @@
             flex: 1;
         }
         }
+
+        .lista-categorias {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+
+            .card-categoria {
+                padding: 1rem 2rem;
+                background: gray;
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background 0.2s ease;
+
+                &:hover {
+                background: #ccc;
+                }
+            }
+        }
+
 
